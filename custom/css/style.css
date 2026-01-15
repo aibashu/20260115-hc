@@ -1,0 +1,155 @@
+@charset "uff-8";
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #FAFFAD;
+}
+
+header{
+    width: 100%;
+    height: 450px;
+    background: url("img/Frame\ 1.png")center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 32px;
+    padding: 12px 24px;
+    border: 2px solid #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    text-shadow: 
+    0 0 5px rgba(0,0,0,0.8),
+    1px 1px 0 #000
+}
+
+main{
+    padding: 100px 0;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background: #232164;
+}
+
+.copyright{
+    font-size: 14px;
+    color: #fff;
+}
+
+form{
+    width: 1000px;
+    max-width: 100%;
+    padding: 80px 125px;
+    margin: auto;
+    background: #A5DDEE;
+}
+
+.form-item{
+    display: flex;
+    align-items: center;
+}
+.form-item + .form-item{
+    margin-top: 40px;
+}
+
+.form-heading{
+    width: 250px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.require{
+    color: #fff;
+    background: #ed2424;
+    font-weight: normal;
+    padding: 4px 8px;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 16px;
+}
+
+input{
+    width: 400px;
+    max-width: 100%;
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+    line-height: 1.0;
+    background-color: #FFD7D7;
+}
+
+textarea{
+    width: 500px;
+    max-width: 100%;
+    min-height: 300px;
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+    line-height: 1.6;
+    resize: vertical;
+    background-color: #FFD7D7;
+}
+
+#coctact-content p{
+    align-self: baseline;
+}
+
+.btn-area{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: 16px 32px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+}
+
+#btn_confirm{
+    background: #999;
+}
+
+/*入力済エリア*/
+.form-entered{
+    width: 500px;
+    max-width: 100%;
+}
+
+#confirm .btn-area{
+    gap: 40px;
+}
+#btn_back{
+    background: #666;
+}
+#btn_submit{
+    background: #222;
+}
+
+/*送信完了*/
+
+#complate main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 450px - 80px);
+}
+#btn_home{
+    background: #999;
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
